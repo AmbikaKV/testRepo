@@ -9,6 +9,7 @@ pipeline {
     stage('readConfigFileForDCdetails') {
       steps {
         echo 'Yet to figure what to add here'
+        readFile(file: '/DCDetails.xml', encoding: 'XML')
       }
     }
     stage('DC1 update') {
